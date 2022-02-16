@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Crown</title>
+    <link rel="shortcut icon" href="./images/money-favicon.png" type="image/x-icon">
+    <!-- CSS Added Here -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <h1><span id="money">Money</span> Crown <img class="money-bag" src="./images/money-bag.png" alt=""></h1>
+        <div class="main-section">
+            <div class="img-part">
+                <img src="./images/money.jpg" alt="">
+            </div>
+
+            <!-- calculation part -->
+
+            <div class="calc-part">
+                <h2>INCOME</h2>
+                <div class="all-inputs">
+                    <span>Income : </span>
+                    <input id="input" type="text">
+
+                </div>
+                <h2>EXPENSES</h2>
+                <div class="all-inputs">
+                    <span>Food : </span>
+                    <input id="input" type="text">
+
+                </div>
+                <div class="all-inputs">
+                    <span>Rent :</span>
+                    <input id="input" type="text">
+
+                </div>
+                <div class="all-inputs">
+                    <span>Clothes :</span>
+                    <input id="input" type="text">
+
+                </div>
+                <div class="calculate-btn">
+                    <button>Calculate</button>
+                </div>
+
+                <h2>Total Expenses: 0 </h2>
+                <h2>Balance: 0
+                </h2>
+
+                <div class="parsent-calc">
+                    <div>
+
+                        <span>Save: </span> <input class="down-input" type="text"> <span id="parsent"> % </span>
+                        <button class="save-button"> Save</button>
+                    </div>
+                </div>
+                <h2>Saving Amount: 0 </h2>
+                <h2>Remaining Balance: 0 </h2>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Added Here -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
