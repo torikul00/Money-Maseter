@@ -8,7 +8,6 @@ document.getElementById('calc-button').addEventListener('click' ,function(){
     const clothInput = document.getElementById('clothe-input')
     const clothInputValue = parseFloat( clothInput.value);
     const totalValues = foodInputValue + rentInputValue + clothInputValue;
-
     if(incomeInputValue > 0 && totalValues < incomeInputValue  ){
         var totalExpenses = document.getElementById('total-expenses');
     totalExpenses.innerText = totalValues;
@@ -21,9 +20,22 @@ if(incomeInput.value > 0 && totalValues < incomeInputValue){
 const mainBalance = document.getElementById('main-balance');
 mainBalance.innerText = remainingBalance;
 }
-// else{
-//     alert('input valid numer');   
-// }
+})
+
+// add even listener of Save button
+
+document.getElementById('save-button').addEventListener('click' , function(){
+    const mainBalance = document.getElementById('main-balance');  
+    const latestMainBalance = parseFloat(mainBalance.innerText);
+    const parsentInput = document.getElementById('parsent-input');
+    const parsentInputValue = parseFloat( parsentInput.value);
+    const save = parsentInputValue /latestMainBalance;
+    const getSavingBalance = save * 100 ; 
+    const saveInput = document.getElementById('save-amount');
+    saveInput.innerText = getSavingBalance;
+    const lastbalance = latestMainBalance - parseFloat(getSavingBalance)
+    const remainingBalance = document.getElementById('remaining-balance');
+    remainingBalance.innerText = lastbalance;
 
 })
 
