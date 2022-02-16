@@ -94,6 +94,9 @@ h2 {
     text-align: center;
     padding: 15px 0px;
 }
+.span{
+    font-size: 24px;
+}
 
 .calculate-btn {
     width: 100%;
@@ -143,6 +146,10 @@ h2 {
 #parsent {
     padding: 0px 10px;
 }
+
+
+/* Responsive UI code */
+
 
 @media only screen and (max-width: 600px) {
     .main-section {
