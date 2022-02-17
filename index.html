@@ -31,21 +31,29 @@
                 </div>
                 <h2>EXPENSES</h2>
                 <div class="all-inputs">
+                    <p id="food-error" class="error">Food Input Invalid</p>
                     <span>Food : </span>
                     <input placeholder="$" id="food-input" type="text">
 
                 </div>
                 <div class="all-inputs">
+                    <p id="rent-error" class="error">Rent Input Invalid</p>
                     <span>Rent :</span>
                     <input placeholder="$" id="rent-input" type="text">
 
                 </div>
                 <div class="all-inputs">
+                    <p id="cloth-error" class="error">Cloth Input Invalid</p>
                     <span>Clothes :</span>
                     <input placeholder="$" id="clothe-input" type="text">
 
                 </div>
                 <div class="calculate-btn">
+
+              <p class="error" id="error-msg"> Error - 
+                 Inputs Only Contain Positive Numbers
+              </p>
+
                     <button id="calc-button">Calculate</button>
                 </div>
 
@@ -61,6 +69,7 @@
                         <button class="save-button" id="save-button"> Save</button>
                     </div>
                 </div>
+             <p id="error2" class="error">Error - Invalid Save Input</p>   
                 <h2>Saving Amount: <span class="span" id="save-amount">0</span> <span class="span">$</span></h2>
                 <h2>Remaining Balance: <span class="span" id="remaining-balance">0</span> <span class="span">$</span></h2>
             </div>
