@@ -82,7 +82,7 @@ input {
 }
 
 input:focus {
-    outline: 4px solid #238053;
+    outline: 4px solid #39c581;
 }
 
 .all-inputs {
@@ -96,6 +96,7 @@ h2 {
 }
 .span{
     font-size: 24px;
+    color: #eeea14;
 }
 
 .calculate-btn {
