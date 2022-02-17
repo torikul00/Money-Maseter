@@ -17,7 +17,7 @@ document.getElementById('calc-button').addEventListener('click', function () {
 
     // Errors handling All inputs 
 
-    if (foodInputValue < 0 || isNaN(foodInputValue)) {
+    if (foodInputValue < 0) {
         const foodError = document.getElementById('food-error');
         foodError.style.display = 'block'
     } else {
@@ -27,7 +27,7 @@ document.getElementById('calc-button').addEventListener('click', function () {
         const foodError = document.getElementById('food-error');
         foodError.style.display = 'none'
     }
-    if (rentInputValue < 0 || isNaN(rentInputValue)) {
+    if (rentInputValue < 0 ) {
         const foodError = document.getElementById('rent-error');
         foodError.style.display = 'block'
     } else {
@@ -37,7 +37,7 @@ document.getElementById('calc-button').addEventListener('click', function () {
         const foodError = document.getElementById('rent-error');
         foodError.style.display = 'none'
     }
-    if (clothInputValue < 0 || isNaN(clothInputValue)) {
+    if (clothInputValue < 0 ) {
         const foodError = document.getElementById('cloth-error');
         foodError.style.display = 'block'
     } else {
@@ -73,6 +73,7 @@ document.getElementById('save-button').addEventListener('click', function () {
     const mainBalance = document.getElementById('main-balance');
     const latestMainBalance = parseFloat(mainBalance.innerText);
     const parsentInputValue = getValue('parsent-input');
+
     if (parsentInputValue <= 100 && latestMainBalance != 0) {
 
         if (mainBalance.innerText > parsentInputValue) {
