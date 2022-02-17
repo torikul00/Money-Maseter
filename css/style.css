@@ -39,7 +39,7 @@ h1 {
 
 .img-part {
     width: 55%;
-    /* background-color: red; */
+   
     height: auto;
 }
 
@@ -49,6 +49,7 @@ h1 {
 }
 
 /* calculation part style */
+
 .calc-part {
     width: 45%;
     height: auto;
@@ -156,7 +157,7 @@ h2 {
 }
 
 
-/* Responsive UI code */
+/* Responsive UI code*/
 
 
 @media only screen and (max-width: 600px) {

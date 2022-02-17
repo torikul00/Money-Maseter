@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="./images/money-favicon.png" type="image/x-icon">
     <!-- CSS Added Here -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
-
 <body>
     <main>
         <h1><span id="money">Money</span> Crown <img class="money-bag" src="./images/money-bag.png" alt=""></h1>
@@ -50,28 +48,31 @@
                 </div>
                 <div class="calculate-btn">
 
-              <p class="error" id="error-msg"> Error - 
-                 Inputs Only Contain Positive Numbers
-              </p>
-
+                    <p class="error" id="error-msg"> Error -Inputs Invalid </p>
                     <button id="calc-button">Calculate</button>
                 </div>
 
-                <h2 >Total Expenses : <span id="total-expenses" class="span">0</span> <span class="span">$</span></h2>
+                <h2>Total Expenses : <span id="total-expenses" class="span">0</span> <span class="span">$</span></h2>
                 <h2>Balance : <span class="span" id="main-balance">0</span> <span class="span">$</span>
                 </h2>
+
+
+                 <!-- parcentage part -->
+
 
                 <div class="parsent-calc">
                     <div>
 
                         <span>Save: </span> <input class="down-input" type="text" id="parsent-input" placeholder="$">
-                         <span id="parsent"> % </span>
+                        <span id="parsent"> % </span>
                         <button class="save-button" id="save-button"> Save</button>
                     </div>
                 </div>
-             <p id="error2" class="error">Error - Invalid Save Input</p>   
+                <p id="error2" class="error">Insufficient Balance</p>
+                <p id="error3" class="error">Parcentage must be lessthan 100</p>
                 <h2>Saving Amount: <span class="span" id="save-amount">0</span> <span class="span">$</span></h2>
-                <h2>Remaining Balance: <span class="span" id="remaining-balance">0</span> <span class="span">$</span></h2>
+                <h2>Remaining Balance: <span class="span" id="remaining-balance">0</span> <span class="span">$</span>
+                </h2>
             </div>
         </div>
     </main>
